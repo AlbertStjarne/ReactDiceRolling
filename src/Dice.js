@@ -1,15 +1,9 @@
 import React, { Component } from "react";
+import "./Dice.css";
 
 class Dice extends Component {
   render() {
-    let rand = Math.floor(Math.random() * 6) + 1;
-    return (
-      <div>
-        <h2>Dice Component</h2>
-        {rand}
-        <i className="fas fa-dice-three"></i>
-      </div>
-    );
+    return <i className={`Dice fas fa-dice-${this.props.face}`}></i>;
   }
 }
 

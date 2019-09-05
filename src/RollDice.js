@@ -5,8 +5,8 @@ class RollDice extends Component {
   render() {
     return (
       <div>
-        <h1>RollDice Component</h1>
-        <Dice />
+        <Dice face="five" />
+        <Dice face="six" />
         <button>Roll Dice!</button>
       </div>
     );
